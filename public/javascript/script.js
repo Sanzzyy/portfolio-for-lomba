@@ -7,6 +7,28 @@ hamburgerMenu.addEventListener("click", () => {
   navItems.classList.toggle("left-0");
 });
 
+// Nav Active
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
 // Gsap Animation Text
 gsap.registerPlugin(SplitText);
 const labelH = document.querySelector(".label-h");
@@ -90,7 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // Program Supabase
 document.getElementById("openModal").addEventListener("click", () => {
   messageModal.classList.remove("hidden");
-  console.log("benar");
 });
 
 const supabaseUrl = "https://grovlgfgkqlruafhcxth.supabase.co";
@@ -102,11 +123,28 @@ const openModal = document.getElementById("openModal");
 const closeModal = document.getElementById("closeModal");
 const messageForm = document.getElementById("messageForm");
 const messageContainer = document.getElementById("messageContainer");
+const mainTance = document.getElementById("maintance");
+
+// Ambil elemen form
+const formMaintance = document.querySelector("#form-maintance");
+
+// Event listener ketika form di-submit
+formMaintance.addEventListener("submit", (e) => {
+  e.preventDefault(); // ← Ini yang penting!
+
+  Swal.fire({
+    icon: "error",
+    title: "Fail",
+    text: "Still in development stage",
+    showConfirmButton: false,
+    timer: 2000,
+  });
+
+  console.log("Maintance clicked");
+});
 
 openModal.addEventListener("click", () => {
-  console.log("benar");
   messageModal.classList.remove("hidden");
-  console.log("messageModal:", messageModal);
 });
 
 // Event buka modal
@@ -133,12 +171,12 @@ messageForm.addEventListener("submit", async (e) => {
   if (error) {
     Swal.fire({
       icon: "error",
-      title: "Gagal",
+      title: "Fail",
       text: error.message,
     });
   } else {
     Swal.fire({
-      icon: "success",
+      icon: "Success",
       title: "Message Sent!",
       text: "Thank you for your feedback. 🙌",
       showConfirmButton: false,
@@ -150,9 +188,6 @@ messageForm.addEventListener("submit", async (e) => {
     loadMessages(); // ambil ulang pesan terbaru
   }
 });
-
-// Load pesan
-console.log("messageContainer:", messageContainer);
 
 async function loadMessages() {
   const { data, error } = await supabaseClient.from("messages").select("*").order("created_at", { ascending: false });
@@ -167,7 +202,7 @@ async function loadMessages() {
       .toUpperCase();
 
     messageContainer.innerHTML += `
-      <div class="border-2 border-slate-800 p-5 rounded-lg bg-slate-800 text-white">
+      <div class="border-2 border-slate-800 p-5 rounded-lg bg-slate-800 text-white" >
         <div><i class="ri-double-quotes-l font-bold text-3xl"></i></div>
         <h1 class="font-bold font-lexend">${msg.message}</h1>
         <div class="py-2" style="color: #eab308">
@@ -178,7 +213,7 @@ async function loadMessages() {
           <i class="ri-star-s-fill text-yellow-500"></i>
         </div>
         <div class="flex items-center gap-3">
-          <div class="border-2 border-white w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full font-bold font-junga bg-red-400" style="width: 3.5rem;height: 3.5rem;
+          <div class="border-2 border-white w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full font-bold font-junga" style="width: 3.5rem;height: 3.5rem;
 ">${initials}</div>
           <div class="flex flex-col">
             <h3 class="text-sm sm:text-base md:text-lg font-bold font-comfortaa">${msg.fullname}</h3>

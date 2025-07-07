@@ -16,3 +16,25 @@
 #messageContainer::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Scrollbar container */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f5f9; /* Tailwind bg-slate-100 */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #1e293b; /* Tailwind bg-slate-800 */
+  border-radius: 8px;
+  border: 2px solid #f1f5f9; /* beri space biar ada jarak */
+}
+
+/* Scrollbar thumb saat hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

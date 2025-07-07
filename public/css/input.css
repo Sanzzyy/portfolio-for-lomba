@@ -33,22 +33,23 @@
 
 li {
   position: relative;
-  display: inline-block; /* agar lebar sesuai isi */
-  padding-bottom: 4px; /* beri jarak agar underline terlihat */
+  display: inline-block;
+  padding-bottom: 4px;
 }
 
-li::before {
+li a::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0;
-  height: 2px; /* ketebalan underline */
-  @apply bg-slate-800;
+  width: 0%;
+  height: 2px;
+  background-color: #1e293b; /* slate-800 */
   transition: width 0.3s ease;
 }
 
-li:hover::before {
+li a:hover::before,
+li a.active::before {
   width: 100%;
 }
 

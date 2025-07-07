@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- My CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/output.css" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body class="bg-[#EEEEEE] min-h-[200vh]">
     <!-- Section Navbar -->
-    <header class="fixed w-full text-slate-800 shadow-lg z-50 bg-[#EEEEEE]">
+    <header class="fixed w-full text-slate-800 shadow-lg z-50 bg-[#EEEEEE]" data-aos="fade-down" data-aos-duration="1000">
       <nav class="container flex justify-between items-center w-full h-16 px-10 md:px-0">
         <!-- Logo -->
         <h1 class="font-bold font-montserrat tracking-wide text-xl z-50 w-52 md:text-xl lg:text-2xl">Solo Code</h1>
@@ -22,10 +26,10 @@
           class="absolute w-full left-full h-[100vh] lg:h-auto top-0 flex justify-center items-center duration-500 ease-in-out bg-[#eeeeee93] backdrop-blur-sm lg:static lg:left-0 lg:bg-transparent lg:backdrop-blur-none"
         >
           <ul class="flex flex-col h-96 justify-around items-center lg:flex-row lg:gap-5 w-full lg:h-auto font-junga font-semibold">
-            <li><a href="#home" class="">Home</a></li>
-            <li><a href="#about" class="">About</a></li>
-            <li><a href="#projects" class="">Projects</a></li>
-            <li><a href="#contact" class="">Contact</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
             <li class="btn px-4 py-2 border border-slate-500 rounded-md hover:text-white duration-700">
               <a href="#feedback">Feedback ❤️</a>
             </li>
@@ -43,38 +47,40 @@
         <!-- Teks -->
         <div class="w-full">
           <div class="space-y-3">
-            <h1 class="label-h font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl text-slate-800">
+            <h1 class="label-h font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl text-slate-800" data-aos="fade-right" data-aos-duration="2000">
               Hi, I'm Muhammad <br />
               Sajid Izzulhaq 👋
             </h1>
-            <h3 class="font-lexend font-semibold text-xl md:text-2xl lg:text-3xl text-slate-700 tracking-wide"><span class="typing-text"></span><span class="cursor">|</span></h3>
+            <h3 class="font-lexend font-semibold text-xl md:text-2xl lg:text-3xl text-slate-700 tracking-wide" data-aos="fade-right" data-aos-duration="2000">
+              <span class="typing-text"></span><span class="cursor">|</span>
+            </h3>
 
-            <p class="font-junga font-semibold text-sm md:text-base lg:text-lg text-slate-600">
+            <p class="font-junga font-semibold text-sm md:text-base lg:text-lg text-slate-600" data-aos="fade-right" data-aos-duration="2000">
               I am a university student focused on Frontend Development. I actively work on various web projects using TailwindCSS, and JavaScript. I believe that creating interactive and responsive
               interfaces is key to delivering the best user experience.
             </p>
 
             <!-- Follow me -->
-            <div class="flex flex-row py-2 text-center justify-start items-center">
+            <div class="flex flex-row py-2 text-center justify-start items-center" data-aos="fade-right" data-aos-duration="2000">
               <h4 class="font-junga text-xs md:text-sm font-semibold text-start">Follow me on:</h4>
               <div class="flex justify-start space-x-3 items-start ml-2">
-                <a href="">
+                <a href="" class="hover:-translate-y-1 duration-500">
                   <i class="ri-tiktok-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
                 </a>
-                <a href="">
+                <a href="" class="hover:-translate-y-1 duration-500">
                   <i class="ri-youtube-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
                 </a>
-                <a href="">
+                <a href="" class="hover:-translate-y-1 duration-500">
                   <i class="ri-linkedin-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
                 </a>
-                <a href="">
+                <a href="" class="hover:-translate-y-1 duration-500">
                   <i class="ri-instagram-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
                 </a>
               </div>
             </div>
 
             <!-- Button -->
-            <div class="w-full flex flex-col space-y-2 text-center md:flex-row md:space-y-0 md:gap-3">
+            <div class="w-full flex flex-col space-y-2 text-center md:flex-row md:space-y-0 md:gap-3" data-aos="fade-right" data-aos-duration="2000">
               <a class="bg-slate-800 text-white px-4 py-2 rounded-md hover:cursor-pointer">
                 <i class="ri-run-fill"></i>
                 Explore My Project
@@ -88,12 +94,12 @@
 
           <!-- Experience -->
           <div class="py-8">
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3" data-aos="fade-right" data-aos-duration="2000">
               <i class="ri-puzzle-line text-xl"></i>
               <p class="font-bold font-junga text-base">Experience:</p>
             </div>
             <!-- Background Experience -->
-            <div class="grid grid-cols-2 xl:grid-rows-1 xl:grid-cols-4 gap-3 text-white pt-5">
+            <div class="grid grid-cols-2 xl:grid-rows-1 xl:grid-cols-4 gap-3 text-white pt-5" data-aos="fade-right" data-aos-duration="2000">
               <!-- skill 1 -->
               <div class="flex items-center w-full justify-evenly bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
                 <i class="ri-html5-fill md:text-2xl hover:text-orange-500 duration-300"></i>
@@ -128,7 +134,7 @@
         </div>
 
         <!-- Image -->
-        <div class="py-12 relative m-auto">
+        <div class="py-12 relative m-auto" data-aos="fade-down" data-aos-duration="2000">
           <img src="./assests/img/photo_me.webp" alt="photo_me" class="image_me rounded-lg border-4 border-slate-800 md:w-80 bg-contain shadow-lg" />
 
           <!-- Icons -->
@@ -138,25 +144,30 @@
 
     <!-- About -->
     <section id="about" class="pt-28">
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
         <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">About</h1>
-        <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">
+        <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg mb-2">
           My front-end journey began with curiosity. Now, I build clean and responsive interfaces—and I’m always learning more along the way.
         </p>
+        <a
+          href="gallery.html"
+          class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg bg-slate-800 text-white px-4 py-2 rounded-md hover:bg-slate-700 hover:scale-105 transition-all duration-300 inline-block"
+          >Take a peek at my personal gallery.</a
+        >
       </div>
       <div class="container grid grid-cols-1 py-12 space-y-5 xl:grid-cols-2 xl:gap-5">
         <!-- Img -->
-        <div class="w-full flex items-end justify-center lg:justify-center">
+        <div class="w-full flex items-end justify-center lg:justify-center" data-aos="fade-down" data-aos-duration="2000">
           <img
             src="./assests/img/photo_me.webp"
             alt="photo_me"
-            class="w-[500px] rounded-xl border-4 border-slate-800 lg:w-80 bg-contain shadow-lg grayscale hover:grayscale-0 hover:-translate-y-5 duration-500 md:mx-auto xl:mx-0 mb-5 xl:mb-0"
+            class="w-80 rounded-xl border-4 border-slate-800 lg:w-80 bg-contain shadow-lg grayscale hover:grayscale-0 hover:-translate-y-5 duration-500 md:mx-auto xl:mx-0 mb-5 xl:mb-0"
           />
         </div>
 
         <!-- Teks -->
         <!-- Section 1 -->
-        <div class="space-y-3 lg:grid lg:grid-cols-2 lg:auto-rows-auto lg:gap-6 lg:space-y-0">
+        <div class="space-y-3 lg:grid lg:grid-cols-2 lg:auto-rows-auto lg:gap-6 lg:space-y-0" data-aos="fade-down" data-aos-duration="2000">
           <div class="flex flex-col items-start gap-2">
             <div class="flex items-center gap-2">
               <i class="ri-user-3-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-md p-5"></i>
@@ -240,7 +251,7 @@
 
     <!-- Projects -->
     <section id="projects" class="pt-28">
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
         <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">Projects</h1>
         <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">Some projects I've made for fun, learning, and school tasks.</p>
       </div>
@@ -248,37 +259,37 @@
       <!-- My Projects -->
       <div class="container grid grid-cols-1 pt-5 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:grid-rows-3">
         <!-- Solo Leveling -->
-        <a href="https://sololevelings1.netlify.app/" class="xl:col-span-1 xl:row-span-1">
+        <a href="https://sololevelings1.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="project-card w-full aspect-[16/9] bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="SOLO LEVELING">
             <img src="./assests/img/projects/solo_leveling.webp" alt="solo-leveling" class="w-full h-full object-cover" />
           </div>
         </a>
         <!-- Attack On Titan S4 -->
-        <a href="https://shingeki-no-kyoujin.netlify.app/" class="xl:col-span-1 xl:row-span-1">
+        <a href="https://shingeki-no-kyoujin.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="ATTACK ON TITAN S4">
             <img src="./assests/img/projects/attack_on_titan.webp" alt="attack-on-titan" class="w-full h-full" />
           </div>
         </a>
         <!-- First Portfolio -->
-        <a href="https://first-portfolio-tailwindcss.netlify.app/" class="xl:col-span-2 xl:row-start-1 xl:row-span-2 xl:text-2xl">
+        <a href="https://first-portfolio-tailwindcss.netlify.app/" class="xl:col-span-2 xl:row-start-1 xl:row-span-2 xl:text-2xl" data-aos="flip-up" data-aos-duration="1000">
           <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="FIRST PORTFOLIO">
             <img src="./assests/img/projects/first_portfolio.webp" alt="first-portfolio" class="w-full h-full object-contain" />
           </div>
         </a>
         <!-- Web Musics -->
-        <a href="https://web-musics-tailwindcss.netlify.app/" class="xl:col-span-1 xl:row-span-1">
+        <a href="https://web-musics-tailwindcss.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
           <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="WEB MUSICS">
             <img src="./assests/img/projects/web_musics.webp" alt="web-musics" class="w-full h-full" />
           </div>
         </a>
         <!-- E-Commerce Keyboard -->
-        <a href="https://e-commerce-keyboard.netlify.app/" class="xl:col-span-1 xl:row-start-3 xl:row-span-1">
+        <a href="https://e-commerce-keyboard.netlify.app/" class="xl:col-span-1 xl:row-start-3 xl:row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
           <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="E-COMMERCE KEYBOARD">
             <img src="./assests/img/projects/e_commerce_keyboard.webp" alt="" class="w-full h-full" />
           </div>
         </a>
         <!-- Coming Soon -->
-        <a href="" class="xl:col-span-1 row-span-1">
+        <a href="" class="xl:col-span-1 row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
           <div class="project-card w-full aspect-video shadow-xl rounded-lg overflow-hidden relative" data-label="COMING SOON!">
             <div class="w-full h-full bg-slate-800/70"></div>
           </div>
@@ -288,12 +299,12 @@
 
     <!-- Feedback -->
     <section id="feedback" class="pt-28">
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
         <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">What People Say</h1>
         <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">I’m thankful for all the feedback that helps me grow.</p>
       </div>
 
-      <div class="container border-2 border-slate-800 w-full h-auto mt-10 rounded-lg">
+      <div class="container border-2 border-slate-800 w-full h-auto mt-10 rounded-lg" data-aos="fade-down" data-aos-duration="1000">
         <!-- Section 1 -->
         <div class="w-full flex justify-between p-5 text-xs sm:text-sm md:text-base border-b-2 border-b-slate-800 mb-5">
           <div class="flex items-center justify-center gap-3">
@@ -308,19 +319,24 @@
 
         <!-- Modal diletakkan sebelum #messageContainer -->
         <div id="messageModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
-          <div class="bg-[#eee] rounded-lg p-6 w-[90%] max-w-lg">
+          <div class="bg-[#eee] rounded-lg p-6 w-[90%] xl:w-96 max-w-lg">
             <h2 class="text-xl font-bold mb-4">Add Your Message</h2>
             <form id="messageForm" class="space-y-3">
-              <input type="text" id="fullname" placeholder="Full Name" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none" required />
+              <input type="text" id="fullname" placeholder="Full Name" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
               <p class="text-sm text-slate-500 italic mt-1">example: Sara Adelia.</p>
-              <input type="email" id="email" placeholder="Email" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none" required />
+              <input type="email" id="email" placeholder="Email" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
               <p class="text-sm text-slate-500 italic mt-1">example: 123@gmail.com.</p>
-              <input type="text" id="position" placeholder="Position" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none" required />
+              <input type="text" id="position" placeholder="Position" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
               <p class="text-sm text-slate-500 italic mt-1">example: Frontend, Backend, UI/UX, etc.</p>
-              <textarea id="message" placeholder="Your Message" class="w-full h-[100px] border text-left align-top resize-none rounded-xl p-3 bg-slate-800 text-white outline-none" required></textarea>
-              <div class="flex justify-between mt-4">
-                <button type="button" id="closeModal" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Cancel</button>
-                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                class="w-full h-[100px] border text-left align-top resize-none rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend"
+                required
+              ></textarea>
+              <div class="flex mt-4 gap-2 font-lexend">
+                <button type="button" id="closeModal" class="bg-slate-500 text-white px-4 py-2 rounded hover:bg-slate-600 w-1/2 duration-300">Cancel</button>
+                <button type="submit" class="btn border-2 border-slate-800 bg-[#EEEE] text-slate-800 px-4 py-2 rounded w-1/2 hover:bg-slate-600 hover:text-white duration-300">Send</button>
               </div>
             </form>
           </div>
@@ -335,61 +351,83 @@
 
     <!-- Contact -->
     <section id="contact" class="pt-28">
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
         <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">Contact</h1>
         <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">Let’s chat or work on something cool together!</p>
       </div>
       <!-- Section 1 -->
-      <div class="container mt-10 space-y-3 flex flex-col lg:w-96 xl:flex-row xl:space-y-0 xl:justify-around xl:w-full">
-        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg xl:hover:bg-slate-800 xl:hover:-translate-y-3 xl:hover:text-white duration-300 hover:cursor-pointer">
+      <div class="container mt-10 space-y-3 flex flex-col lg:w-96 xl:flex-row xl:space-y-0 xl:justify-around xl:w-full" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
           <i class="ri-github-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
           <div>
             <span class="font-bold font-lexend text-xl">Github</span>
             <p class="font-semibold font-lexend text-slate-600 text-xs">Explore my code & projects</p>
           </div>
         </div>
-        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg xl:hover:bg-slate-800 xl:hover:-translate-y-3 xl:hover:text-white duration-300 hover:cursor-pointer">
+        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
           <i class="ri-instagram-line w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
           <div>
             <span class="font-bold font-lexend text-xl">Instagram</span>
             <p class="font-semibold font-lexend text-slate-600 text-xs">Life Updates</p>
           </div>
         </div>
-        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg xl:hover:bg-slate-800 xl:hover:-translate-y-3 xl:hover:text-white duration-300 hover:cursor-pointer">
+        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
           <i class="ri-tiktok-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
           <div>
             <span class="font-bold font-lexend text-xl">Tiktok</span>
             <p class="font-semibold font-lexend text-slate-600 text-xs">Content Education</p>
           </div>
         </div>
-        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg xl:hover:bg-slate-800 xl:hover:-translate-y-3 xl:hover:text-white duration-300 hover:cursor-pointer">
-          <i class="ri-linkedin-box-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
+        <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
+          <i class="ri-linkedin-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
           <div>
-            <span class="font-bold font-lexend text-xl">Tiktok</span>
-            <p class="font-semibold font-lexend text-slate-600 text-xs">Content Education</p>
+            <span class="font-bold font-lexend text-xl">Linkedln</span>
+            <p class="font-semibold font-lexend text-slate-600 text-xs">Let's Connect Professionally</p>
           </div>
         </div>
       </div>
 
       <!-- Section 2 Contact -->
-      <div class="container rounded-lg mt-10 w-full border-4 border-slate-800 mx-auto h-fit">
+      <div class="container rounded-lg mt-10 w-full border-4 border-slate-800 mx-auto h-fit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
         <div class="gap-3 items-center justify-center pt-5">
           <i class="ri-message-2-fill"></i>
           <span class="font-bold font-junga">Send Message</span>
         </div>
         <div class="flex pt-5">
-          <form id="messageForm" class="space-y-3 w-full">
-            <input type="text" id="fullname" placeholder="Full Name" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" required />
-            <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" required />
-            <textarea id="message" placeholder="Your Message" class="w-full p-3 h-[200px] border rounded-xl outline-none text-left align-top resize-none bg-slate-800 text-white" required></textarea>
+          <form id="form-maintance" class="space-y-3 w-full">
+            <input type="text" id="fullname" placeholder="Full Name" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" />
+            <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" />
+            <textarea id="message" placeholder="Your Message" class="w-full p-3 h-[200px] border rounded-xl outline-none text-left align-top resize-none bg-slate-800 text-white"></textarea>
             <div class="mt-4 w-full py-5">
-              <button type="submit" class="bg-slate-800 text-white py-2 rounded-xl hover:bg-slate-700 w-full">Send</button>
+              <button type="submit" id="maintance" class="bg-slate-800 text-white py-2 rounded-xl hover:bg-slate-700 w-full h-10">Send</button>
             </div>
           </form>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="mt-28 w-full bg-slate-800">
+      <div class="container text-slate-500 py-10 w-full h-full space-y-10 xl:space-y-0 flex flex-col xl:flex-row items-center justify-around">
+        <!-- Section 1 -->
+        <div class="text-center xl:w-1/2 hover:text-white hover:cursor-pointer duration-300">
+          <i class="ri-building-fill text-7xl"></i>
+          <h1 class="text-xl font-bold font-comfortaa">Solo Code</h1>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="text-center w-1/2 h-full xl:w-1/2 xl:flex xl:space-y-0 xl:justify-around">
+          <div class="space-y-3">
+            <span class="font-bold text-xl font-comfortaa hover:text-white duration-300">Contac Me</span>
+            <ul class="flex flex-col">
+              <li><span class="font-boogaloo tracking-wide text-lg hover:text-white hover:cursor-pointer duration-300">+62 895 2573 7776</span></li>
+              <li><span class="font-boogaloo tracking-wide text-lg hover:text-white hover:cursor-pointer duration-300">sajidizzulhaqz@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-slate-500 text-center mt-5 p-5 font-boogaloo tracking-widest">Copyright © 2025 SoloCode. All rights reserved.</p>
+    </footer>
     <!-- Gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
@@ -410,6 +448,14 @@
 
     <!-- Sweet Alert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // ✅ animasi hanya muncul sekali
+      });
+    </script>
 
     <script src="./javascript/script.js"></script>
   </body>
