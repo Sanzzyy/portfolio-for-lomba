@@ -201,9 +201,22 @@ window.addEventListener("load", () => {
     renderLoop();
 
     window.addEventListener("resize", () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+      camera.aspect = window.innerWidth / viewportHeight;
+
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    let resizeTimeout;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+        camera.aspect = window.innerWidth / viewportHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, viewportHeight);
+      }, 200); // kasih delay sedikit biar stabil
     });
 
     // Fade-in canvas animation

@@ -8,7 +8,6 @@ module.exports = {
         montserrat: "Montserrat",
         lexend: "Lexend",
         comfortaa: "Comfortaa",
-        boogaloo: "Boogaloo",
       },
     },
     screens: {
