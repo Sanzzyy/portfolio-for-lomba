@@ -3,7 +3,6 @@ window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
   const scrollHeight = document.documentElement.scrollHeight;
   const windowHeight = window.innerHeight;
-
   const returnBtn = document.getElementById("returnBtn");
 
   if (scrollTop + windowHeight >= scrollHeight - 10) {
@@ -17,7 +16,6 @@ window.addEventListener("scroll", () => {
 
 // Animasi Images
 window.addEventListener("load", () => {
-  // Init smooth scroll (Lenis)
   const lenis = new Lenis();
   function raf(time) {
     lenis.raf(time);
@@ -28,7 +26,6 @@ window.addEventListener("load", () => {
   const images = [];
   let loadedImageCount = 0;
 
-  // Load 7 image slides
   function loadImages() {
     for (let i = 1; i <= 7; i++) {
       const img = new Image();
@@ -82,16 +79,9 @@ window.addEventListener("load", () => {
       alpha: false,
       willReadFrequently: false,
     });
-    if (window.innerWidth < 768) {
-      textureCanvas.width = 768;
-      textureCanvas.height = 2048;
-    } else {
-      textureCanvas.width = 1024;
-      textureCanvas.height = 4096;
-    }
 
-    textureCanvas.width = 1024;
-    textureCanvas.height = 4096;
+    textureCanvas.width = 640;
+    textureCanvas.height = 2560;
 
     const texture = new THREE.CanvasTexture(textureCanvas);
     texture.wrapS = THREE.RepeatWrapping;
@@ -110,7 +100,6 @@ window.addEventListener("load", () => {
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
     directionalLight.position.set(0, 20, 20);
-
     scene.add(ambientLight, directionalLight);
 
     const parentMesh = new THREE.Mesh(parentGeometry, parentMaterial);
@@ -127,7 +116,8 @@ window.addEventListener("load", () => {
     camera.rotation.z = THREE.MathUtils.degToRad(-5);
 
     const totalSlides = 7;
-    const slideHeight = 15;
+    const slideHeight = 25;
+
     const gap = 2.5;
     const cycleHeight = totalSlides * (slideHeight + gap);
 
@@ -185,7 +175,6 @@ window.addEventListener("load", () => {
           ctx.globalAlpha = alpha;
           ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
           ctx.globalAlpha = 1;
-
           ctx.restore();
         }
       }
@@ -194,12 +183,18 @@ window.addEventListener("load", () => {
     }
 
     let currentScroll = 0;
+    let lastOffset = -1;
+
     lenis.on("scroll", ({ scroll, limit }) => {
       currentScroll = scroll / limit;
     });
 
     function renderLoop() {
-      updateTexture(-currentScroll);
+      const offset = -currentScroll;
+      if (offset !== lastOffset) {
+        updateTexture(offset);
+        lastOffset = offset;
+      }
       renderer.render(scene, camera);
       requestAnimationFrame(renderLoop);
     }
@@ -211,8 +206,15 @@ window.addEventListener("load", () => {
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
 
-    updateTexture(0);
-    renderer.render(scene, camera);
+    // Fade-in canvas animation
+    const canvas = document.querySelector("canvas");
+    canvas.style.opacity = 0;
+    canvas.style.transform = "translateY(50px)";
+    canvas.style.transition = "all 1s ease";
+    setTimeout(() => {
+      canvas.style.opacity = 1;
+      canvas.style.transform = "translateY(0)";
+    }, 300);
   }
 
   loadImages();
