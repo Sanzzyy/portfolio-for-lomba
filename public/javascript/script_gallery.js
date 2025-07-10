@@ -1,4 +1,4 @@
-// Button
+// Button return tetap sama
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
   const scrollHeight = document.documentElement.scrollHeight;
@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Animasi Images
+// Animasi Images dengan optimasi
 window.addEventListener("load", () => {
   const lenis = new Lenis();
   function raf(time) {
@@ -57,11 +57,12 @@ window.addEventListener("load", () => {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setClearColor(0x000000);
 
+    // 🪄 Optimasi: turunkan segments & curvature
     const parentWidth = 20;
     const parentHeight = 75;
-    const curvature = 35;
-    const segmentsX = 200;
-    const segmentsY = 200;
+    const curvature = 20; // dulu 35
+    const segmentsX = 80; // dulu 200
+    const segmentsY = 80; // dulu 200
 
     const parentGeometry = new THREE.PlaneGeometry(parentWidth, parentHeight, segmentsX, segmentsY);
     const positions = parentGeometry.attributes.position.array;
@@ -71,17 +72,13 @@ window.addEventListener("load", () => {
       const distanceFromCenter = Math.abs(y / parentHeight / 2);
       positions[i + 2] = -Math.pow(distanceFromCenter, 2) * curvature;
     }
-
     parentGeometry.computeVertexNormals();
 
+    // 🪄 Optimasi: kurangi height canvas texture
     const textureCanvas = document.createElement("canvas");
-    const ctx = textureCanvas.getContext("2d", {
-      alpha: false,
-      willReadFrequently: false,
-    });
-
+    const ctx = textureCanvas.getContext("2d", { alpha: false });
     textureCanvas.width = 640;
-    textureCanvas.height = 2560;
+    textureCanvas.height = 2048; // dulu 2560
 
     const texture = new THREE.CanvasTexture(textureCanvas);
     texture.wrapS = THREE.RepeatWrapping;
@@ -97,10 +94,10 @@ window.addEventListener("load", () => {
       metalness: 0.1,
     });
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+    scene.add(new THREE.AmbientLight(0xffffff, 0.7));
     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
     directionalLight.position.set(0, 20, 20);
-    scene.add(ambientLight, directionalLight);
+    scene.add(directionalLight);
 
     const parentMesh = new THREE.Mesh(parentGeometry, parentMaterial);
     parentMesh.rotation.x = THREE.MathUtils.degToRad(-20);
@@ -117,7 +114,6 @@ window.addEventListener("load", () => {
 
     const totalSlides = 7;
     const slideHeight = 25;
-
     const gap = 2.5;
     const cycleHeight = totalSlides * (slideHeight + gap);
 
@@ -126,17 +122,13 @@ window.addEventListener("load", () => {
       ctx.fillRect(0, 0, textureCanvas.width, textureCanvas.height);
 
       const extraSlides = 2;
-
       for (let i = -extraSlides; i < totalSlides + extraSlides; i++) {
-        let slideY = -i * (slideHeight + gap);
-        slideY += offset * cycleHeight;
-
-        const textureY = (slideY / cycleHeight) * textureCanvas.height;
+        let slideY = -i * (slideHeight + gap) + offset * cycleHeight;
+        let textureY = (slideY / cycleHeight) * textureCanvas.height;
         let wrappedY = textureY % textureCanvas.height;
         if (wrappedY < 0) wrappedY += textureCanvas.height;
 
         let slideIndex = ((i % totalSlides) + totalSlides) % totalSlides;
-
         const slideRect = {
           x: textureCanvas.width * 0.05,
           y: wrappedY,
@@ -148,7 +140,6 @@ window.addEventListener("load", () => {
         if (img) {
           const imgAspect = img.width / img.height;
           const rectAspect = slideRect.width / slideRect.height;
-
           let drawWidth, drawHeight, drawX, drawY;
           if (imgAspect > rectAspect) {
             drawHeight = slideRect.height;
@@ -178,7 +169,6 @@ window.addEventListener("load", () => {
           ctx.restore();
         }
       }
-
       texture.needsUpdate = true;
     }
 
@@ -201,22 +191,9 @@ window.addEventListener("load", () => {
     renderLoop();
 
     window.addEventListener("resize", () => {
-      const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-      camera.aspect = window.innerWidth / viewportHeight;
-
+      camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
-    });
-
-    let resizeTimeout;
-    window.addEventListener("resize", () => {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(() => {
-        const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-        camera.aspect = window.innerWidth / viewportHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, viewportHeight);
-      }, 200); // kasih delay sedikit biar stabil
     });
 
     // Fade-in canvas animation

@@ -29,29 +29,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Gsap Animation Text
-gsap.registerPlugin(SplitText);
-const labelH = document.querySelector(".label-h");
-
-const splitH = new SplitText(labelH, {
-  type: "lines",
-});
-
-const tl = gsap.timeline();
-
-tl.from(splitH.chars, {
-  y: 50,
-  opacity: 0,
-  stagger: 0.05,
-  duration: 0.6,
-  ease: "power2.out",
-}).to(splitH.chars, {
-  color: "#1e293b",
-  duration: 1,
-  ease: "power2.out",
-});
-
-// Animation Typing Text
+// Gsap Animation Typing Text
 const labelP = document.querySelector(".label-p");
 const cursor = document.querySelector(".cursor");
 const texts = ["Frontend Developer", "Content Creator"];

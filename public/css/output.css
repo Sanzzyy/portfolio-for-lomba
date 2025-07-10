@@ -614,20 +614,20 @@ video {
   bottom: 1rem;
 }
 
-.left-0{
-  left: 0px;
-}
-
 .left-4{
   left: 1rem;
+}
+
+.left-full{
+  left: 100%;
 }
 
 .top-0{
   top: 0px;
 }
 
-.left-full{
-  left: 100%;
+.left-0{
+  left: 0px;
 }
 
 .z-50{
@@ -677,6 +677,10 @@ video {
 
 .mt-28{
   margin-top: 7rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .mt-4{
