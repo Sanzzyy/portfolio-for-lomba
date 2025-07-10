@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assests/img/coding.png" />
 
-    <!-- My CSS -->
+    <!--  Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--  Preconnect ke CDN yang dipakai -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/npm" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/npm/@supabase" crossorigin />
+
+    <!--  Preload hero image (yang tampil pertama kali) -->
+    <link rel="preload" as="image" href="./assests/img/photo_me.webp" type="image/webp" />
+
+    <!--  Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanchenjunga:wght@400;500;600;700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/output.css" />
 
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
+
   <body class="bg-[#EEEEEE] min-h-[200vh]">
     <!-- Section Navbar -->
     <header class="fixed w-full text-slate-800 shadow-lg z-50 bg-[#EEEEEE]" data-aos="fade-down" data-aos-duration="1000">
@@ -481,6 +503,6 @@
       });
     </script>
 
-    <script src="./javascript/script.js"></script>
+    <script src="./javascript/script.js" defer></script>
   </body>
 </html>
