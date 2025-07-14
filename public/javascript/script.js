@@ -151,7 +151,7 @@ messageForm.addEventListener("submit", async (e) => {
     });
   } else {
     Swal.fire({
-      icon: "Success",
+      icon: "success",
       title: "Message Sent!",
       text: "Thank you for your feedback. 🙌",
       showConfirmButton: false,
