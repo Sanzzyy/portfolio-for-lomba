@@ -103,21 +103,6 @@ const mainTance = document.getElementById("maintance");
 // Ambil elemen form
 const formMaintance = document.querySelector("#form-maintance");
 
-// Event listener ketika form di-submit
-formMaintance.addEventListener("submit", (e) => {
-  e.preventDefault(); // ← Ini yang penting!
-
-  Swal.fire({
-    icon: "error",
-    title: "Fail",
-    text: "Still in development stage",
-    showConfirmButton: false,
-    timer: 2000,
-  });
-
-  console.log("Maintance clicked");
-});
-
 openModal.addEventListener("click", () => {
   messageModal.classList.remove("hidden");
 });
