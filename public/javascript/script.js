@@ -103,6 +103,16 @@ const mainTance = document.getElementById("maintance");
 // Ambil elemen form
 const formMaintance = document.querySelector("#form-maintance");
 
+formMaintance.addEventListener("submit", (e) => {
+  e.preventDefault();
+  Swal.fire({
+    icon: "info",
+    title: "Maintenance",
+    text: "This feature is under maintenance. 🙏",
+    confirmButtonText: "OK",
+  });
+});
+
 openModal.addEventListener("click", () => {
   messageModal.classList.remove("hidden");
 });
