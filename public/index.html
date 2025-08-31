@@ -40,7 +40,7 @@
 
   <body class="bg-[#EEEEEE]">
     <!-- Section Navbar -->
-    <header class="fixed w-full text-slate-800 shadow-lg z-50 bg-[#EEEEEE]" data-aos="fade-down" data-aos-duration="1000">
+    <header class="fixed w-full text-slate-800 shadow-lg z-50 bg-[#EEEEEE]" data-aos="fade-down" data-aos-duration="1000 select-none">
       <nav class="container flex justify-between items-center w-full h-16 px-10 md:px-0">
         <!-- Logo -->
         <h1 class="font-bold font-montserrat tracking-wide text-xl z-50 w-52 md:text-xl lg:text-2xl">Solo Code</h1>
@@ -67,371 +67,373 @@
     </header>
 
     <!-- Home -->
-    <section id="home" class="text-slate-800 pt-32">
-      <div class="container grid grid-cols-1 xl:grid-cols-2 gap-12">
-        <!-- Teks -->
-        <div class="w-full">
-          <div class="space-y-3">
-            <h1 class="font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl text-slate-800" data-aos="fade-right" data-aos-duration="1000">
-              Hi, I'm Muhammad <br />
-              Sajid Izzulhaq 👋
-            </h1>
-            <h3 class="font-junga font-semibold text-xl md:text-2xl lg:text-3xl text-slate-700 tracking-wide" data-aos="fade-right" data-aos-duration="1500">
-              <span class="typing-text"></span><span class="cursor">|</span>
-            </h3>
+    <main class="select-none">
+      <section id="home" class="text-slate-800 pt-32">
+        <div class="container grid grid-cols-1 xl:grid-cols-2 gap-12">
+          <!-- Teks -->
+          <div class="w-full">
+            <div class="space-y-3">
+              <h1 class="font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl text-slate-800" data-aos="fade-right" data-aos-duration="1000">
+                Hi, I'm Muhammad <br />
+                Sajid Izzulhaq 👋
+              </h1>
+              <h3 class="font-junga font-semibold text-xl md:text-2xl lg:text-3xl text-slate-700 tracking-wide" data-aos="fade-right" data-aos-duration="1500">
+                <span class="typing-text"></span><span class="cursor">|</span>
+              </h3>
 
-            <p class="font-junga font-semibold text-sm md:text-base lg:text-lg text-slate-600" data-aos="fade-right" data-aos-duration="1500">
-              I am a university student focused on Frontend Development. I actively work on various web projects using TailwindCSS, and JavaScript. I believe that creating interactive and responsive
-              interfaces is key to delivering the best user experience.
-            </p>
+              <p class="font-junga font-semibold text-sm md:text-base lg:text-lg text-slate-600" data-aos="fade-right" data-aos-duration="1500">
+                I am a university student focused on Frontend Development. I actively work on various web projects using TailwindCSS, and JavaScript. I believe that creating interactive and responsive
+                interfaces is key to delivering the best user experience.
+              </p>
 
-            <!-- Follow me -->
-            <div class="flex flex-row py-2 text-center justify-start items-center" data-aos="fade-right" data-aos-duration="1500">
-              <h4 class="font-junga text-xs md:text-sm font-semibold text-start">Follow me on:</h4>
-              <div class="flex justify-start space-x-3 items-start ml-2">
-                <a href="https://www.tiktok.com/@webdev.sajid06?is_from_webapp=1&sender_device=pc" class="hover:-translate-y-1 duration-500">
-                  <i class="ri-tiktok-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
+              <!-- Follow me -->
+              <div class="flex flex-row py-2 text-center justify-start items-center" data-aos="fade-right" data-aos-duration="1500">
+                <h4 class="font-junga text-xs md:text-sm font-semibold text-start">Follow me on:</h4>
+                <div class="flex justify-start space-x-3 items-start ml-2">
+                  <a href="https://www.tiktok.com/@webdev.sajid06?is_from_webapp=1&sender_device=pc" class="hover:-translate-y-1 duration-500">
+                    <i class="ri-tiktok-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
+                  </a>
+                  <a href="#" class="hover:-translate-y-1 duration-500">
+                    <i class="ri-youtube-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/muhammad-sajid-4752742a0/" class="hover:-translate-y-1 duration-500">
+                    <i class="ri-linkedin-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
+                  </a>
+                  <a href="https://www.instagram.com/webdev_sajid?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="hover:-translate-y-1 duration-500">
+                    <i class="ri-instagram-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="w-full flex flex-col space-y-2 text-center md:flex-row md:space-y-0 md:gap-3" data-aos="fade-right" data-aos-duration="1500">
+                <a href="#about" class="bg-slate-800 text-white px-4 py-2 rounded-md hover:cursor-pointer font-junga">
+                  <i class="ri-run-fill"></i>
+                  Explore My Project
                 </a>
-                <a href="#" class="hover:-translate-y-1 duration-500">
-                  <i class="ri-youtube-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/muhammad-sajid-4752742a0/" class="hover:-translate-y-1 duration-500">
-                  <i class="ri-linkedin-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
-                </a>
-                <a href="https://www.instagram.com/webdev_sajid?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="hover:-translate-y-1 duration-500">
-                  <i class="ri-instagram-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-full"></i>
-                </a>
+                <a href="#contact" class="bg-transparent border border-slate-800 text-slate-800 px-4 py-2 rounded-md hover:cursor-pointer btn hover:text-white duration-700 font-junga">
+                  <i class="ri-discuss-line"></i>
+                  Contact me!</a
+                >
               </div>
             </div>
 
-            <!-- Button -->
-            <div class="w-full flex flex-col space-y-2 text-center md:flex-row md:space-y-0 md:gap-3" data-aos="fade-right" data-aos-duration="1500">
-              <a href="#about" class="bg-slate-800 text-white px-4 py-2 rounded-md hover:cursor-pointer font-junga">
-                <i class="ri-run-fill"></i>
-                Explore My Project
-              </a>
-              <a href="#contact" class="bg-transparent border border-slate-800 text-slate-800 px-4 py-2 rounded-md hover:cursor-pointer btn hover:text-white duration-700 font-junga">
-                <i class="ri-discuss-line"></i>
-                Contact me!</a
-              >
+            <!-- Experience -->
+            <div class="py-8">
+              <div class="flex items-center gap-3" data-aos="fade-right" data-aos-duration="1500">
+                <i class="ri-puzzle-line text-xl"></i>
+                <p class="font-bold font-junga text-base">Experience:</p>
+              </div>
+              <!-- Background Experience -->
+              <div class="grid grid-cols-2 xl:grid-rows-1 xl:grid-cols-4 gap-3 text-white pt-5" data-aos="fade-right" data-aos-duration="1500">
+                <!-- skill 1 -->
+                <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
+                  <i class="ri-html5-fill text-xl md:text-2xl duration-300"></i>
+                  <div>
+                    <span class="font-bold font-junga">2+ Years</span>
+                    <p class="font-junga">Experience</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
+                  <i class="ri-css3-fill text-xl md:text-2xl duration-300"></i>
+                  <div>
+                    <span class="font-bold font-junga">2+ Years</span>
+                    <p class="font-junga">Experience</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
+                  <i class="ri-javascript-fill text-xl md:text-2xl duration-300"></i>
+                  <div>
+                    <span class="font-bold font-junga">2+ Years</span>
+                    <p class="font-junga">Experience</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
+                  <i class="ri-tailwind-css-fill text-xl md:text-2xl duration-300"></i>
+                  <div>
+                    <span class="font-bold font-junga">2+ Years</span>
+                    <p class="font-junga">Experience</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Experience -->
-          <div class="py-8">
-            <div class="flex items-center gap-3" data-aos="fade-right" data-aos-duration="1500">
-              <i class="ri-puzzle-line text-xl"></i>
-              <p class="font-bold font-junga text-base">Experience:</p>
+          <!-- Image -->
+          <div class="py-12 relative m-auto" data-aos="fade-down" data-aos-duration="1800">
+            <img src="./assests/img/photo_me.webp" alt="photo_me" class="image_me rounded-lg border-4 border-slate-800 md:w-80 bg-contain shadow-lg" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="pt-28">
+        <div class="text-center">
+          <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2" data-aos="fade-down" data-aos-duration="1500">About</h1>
+          <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg mb-2" data-aos="fade-down" data-aos-duration="1500">
+            My front-end journey began with curiosity. Now, I build clean and responsive interfaces—and I’m always learning more along the way.
+          </p>
+        </div>
+        <div class="container grid grid-cols-1 py-12 space-y-5 xl:grid-cols-2 xl:gap-5">
+          <!-- Img -->
+          <div class="w-full flex items-end justify-center lg:justify-center" data-aos="fade-down" data-aos-duration="2000">
+            <img
+              src="./assests/img/photo_me.webp"
+              alt="photo_me"
+              class="w-80 rounded-xl border-4 border-slate-800 lg:w-80 bg-contain shadow-lg grayscale hover:grayscale-0 hover:-translate-y-5 duration-500 md:mx-auto xl:mx-0 mb-5 xl:mb-0"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Teks -->
+          <!-- Section 1 -->
+          <div class="space-y-3 lg:grid lg:grid-cols-2 lg:auto-rows-auto lg:gap-6 lg:space-y-0" data-aos="fade-down" data-aos-duration="2000">
+            <div class="flex flex-col items-start gap-2">
+              <div class="flex items-center gap-2">
+                <i class="ri-user-3-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-md p-5"></i>
+                <h3 class="font-bold font-lexend text-lg md:text-xl lg:text-2xl">Who Am I</h3>
+              </div>
+              <p class="font-junga text-sm md:text-lg lg:text-lg">
+                I'm a frontend developer who crafts responsive, interactive, and clean UIs. With a background in Informatics Engineering, I blend design sense with technical logic.
+              </p>
             </div>
-            <!-- Background Experience -->
-            <div class="grid grid-cols-2 xl:grid-rows-1 xl:grid-cols-4 gap-3 text-white pt-5" data-aos="fade-right" data-aos-duration="1500">
-              <!-- skill 1 -->
-              <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
-                <i class="ri-html5-fill text-xl md:text-2xl duration-300"></i>
-                <div>
-                  <span class="font-bold font-junga">2+ Years</span>
-                  <p class="font-junga">Experience</p>
-                </div>
+            <div class="flex flex-col items-start gap-2">
+              <div class="flex items-center gap-2">
+                <i class="ri-brain-2-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-md p-5"></i>
+                <h3 class="font-bold font-lexend text-lg md:text-xl lg:text-2xl">My Approach</h3>
               </div>
-              <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
-                <i class="ri-css3-fill text-xl md:text-2xl duration-300"></i>
-                <div>
-                  <span class="font-bold font-junga">2+ Years</span>
-                  <p class="font-junga">Experience</p>
-                </div>
+              <p class="font-junga text-sm md:text-lg lg:text-lg">
+                I focus on user-centered design, performance, and accessibility always evolving with modern tech to deliver seamless digital experiences.
+              </p>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="lg:col-span-2">
+              <div class="flex items-center gap-2 mb-2">
+                <i class="ri-information-line items-center justify-center text-3xl"></i>
+                <h3 class="font-bold font-lexend text-lg md:text-xl lg:text-2xl">Personal Info</h3>
               </div>
-              <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
-                <i class="ri-javascript-fill text-xl md:text-2xl duration-300"></i>
-                <div>
-                  <span class="font-bold font-junga">2+ Years</span>
-                  <p class="font-junga">Experience</p>
+
+              <!-- Info Personal -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 space-y-3 lg:space-y-0 lg:gap-6">
+                <div class="flex items-center gap-2">
+                  <i class="ri-id-card-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
+
+                  <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
+                    <span class="font-semibold tracking-wide">Nama:</span>
+                    <span>Muhammad Sajid Izzulhaq</span>
+                  </div>
                 </div>
-              </div>
-              <div class="flex items-center justify-around bg-slate-800 rounded-xl py-2 hover:-translate-y-3 duration-500">
-                <i class="ri-tailwind-css-fill text-xl md:text-2xl duration-300"></i>
-                <div>
-                  <span class="font-bold font-junga">2+ Years</span>
-                  <p class="font-junga">Experience</p>
+                <div class="flex items-center gap-2">
+                  <i class="ri-calendar-todo-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
+
+                  <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
+                    <span class="font-semibold tracking-wide">Date of Birth:</span>
+                    <span>November, 12 - 2006</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="ri-building-4-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
+
+                  <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
+                    <span class="font-semibold tracking-wide">Place of Birth:</span>
+                    <span>Lampung, Indonesia</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="ri-mail-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
+
+                  <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
+                    <span class="font-semibold tracking-wide">Email:</span>
+                    <span>sajidizzulhaqz@gmail.com</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="ri-phone-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-md"></i>
+                  <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
+                    <span class="font-semibold tracking-wide">Phone:</span>
+                    <span>0895-2573-7776</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="ri-school-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
+
+                  <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
+                    <span class="font-semibold tracking-wide">Education:</span>
+                    <span>Universitas Teknokrat Indonesia</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Image -->
-        <div class="py-12 relative m-auto" data-aos="fade-down" data-aos-duration="1800">
-          <img src="./assests/img/photo_me.webp" alt="photo_me" class="image_me rounded-lg border-4 border-slate-800 md:w-80 bg-contain shadow-lg" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="pt-28">
-      <div class="text-center">
-        <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2" data-aos="fade-down" data-aos-duration="1500">About</h1>
-        <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg mb-2" data-aos="fade-down" data-aos-duration="1500">
-          My front-end journey began with curiosity. Now, I build clean and responsive interfaces—and I’m always learning more along the way.
-        </p>
-      </div>
-      <div class="container grid grid-cols-1 py-12 space-y-5 xl:grid-cols-2 xl:gap-5">
-        <!-- Img -->
-        <div class="w-full flex items-end justify-center lg:justify-center" data-aos="fade-down" data-aos-duration="2000">
-          <img
-            src="./assests/img/photo_me.webp"
-            alt="photo_me"
-            class="w-80 rounded-xl border-4 border-slate-800 lg:w-80 bg-contain shadow-lg grayscale hover:grayscale-0 hover:-translate-y-5 duration-500 md:mx-auto xl:mx-0 mb-5 xl:mb-0"
-            loading="lazy"
-          />
+      <!-- Projects -->
+      <section id="projects" class="pt-28">
+        <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
+          <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">Projects</h1>
+          <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">Some projects I've made for fun, learning, and school tasks.</p>
         </div>
 
-        <!-- Teks -->
+        <!-- My Projects -->
+        <div class="container grid grid-cols-1 pt-5 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:grid-rows-3">
+          <!-- Solo Leveling -->
+          <a href="https://sololevelings1.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="project-card w-full aspect-[16/9] bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="SOLO LEVELING">
+              <img src="./assests/img/projects/solo_leveling.webp" alt="solo-leveling" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+          </a>
+          <!-- Attack On Titan S4 -->
+          <a href="https://shingeki-no-kyoujin.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="ATTACK ON TITAN S4">
+              <img src="./assests/img/projects/attack_on_titan.webp" alt="attack-on-titan" class="w-full h-full" loading="lazy" />
+            </div>
+          </a>
+          <!-- First Portfolio -->
+          <a href="https://first-portfolio-tailwindcss.netlify.app/" class="xl:col-span-2 xl:row-start-1 xl:row-span-2 xl:text-2xl" data-aos="flip-up" data-aos-duration="1000">
+            <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="FIRST PORTFOLIO">
+              <img src="./assests/img/projects/first_portfolio.webp" alt="first-portfolio" class="w-full h-full object-contain" loading="lazy" />
+            </div>
+          </a>
+          <!-- Web Musics -->
+          <a href="https://web-musics-tailwindcss.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="WEB MUSICS">
+              <img src="./assests/img/projects/web_musics.webp" alt="web-musics" class="w-full h-full" loading="lazy" />
+            </div>
+          </a>
+          <!-- E-Commerce Keyboard -->
+          <a href="https://e-commerce-keyboard.netlify.app/" class="xl:col-span-1 xl:row-start-3 xl:row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+            <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="E-COMMERCE KEYBOARD">
+              <img src="./assests/img/projects/e_commerce_keyboard.webp" alt="" class="w-full h-full" loading="lazy" />
+            </div>
+          </a>
+          <!-- Coming Soon -->
+          <a href="" class="xl:col-span-1 row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
+            <div class="project-card w-full aspect-video shadow-xl rounded-lg overflow-hidden relative" loading="lazy" data-label="COMING SOON!">
+              <div class="w-full h-full bg-slate-800/70"></div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Feedback -->
+      <section id="feedback" class="pt-28">
+        <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
+          <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">What People Say</h1>
+          <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">I’m thankful for all the feedback that helps me grow.</p>
+        </div>
+
+        <div class="container border-2 border-slate-800 w-full h-auto mt-10 rounded-lg" data-aos="fade-down" data-aos-duration="1000">
+          <!-- Section 1 -->
+          <div class="w-full flex justify-between p-5 text-xs sm:text-sm md:text-base border-b-2 border-b-slate-800 mb-5">
+            <div class="flex items-center justify-center gap-3">
+              <i class="ri-question-answer-fill text-xl"></i>
+              <h3 class="font-bold font-lexend">Message</h3>
+            </div>
+            <button id="openModal" class="flex bg-slate-800 rounded-lg p-2 items-center justify-center ml-6 text-white text-center gap-3 md:px-4 md:py-2 lg:px-6 lg:py-2">
+              <i class="ri-add-fill text-xl"></i>
+              <h3 class="font-bold font-lexend tracking-wide">Add Message</h3>
+            </button>
+          </div>
+
+          <!-- Modal diletakkan sebelum #messageContainer -->
+          <div id="messageModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
+            <div class="bg-[#eee] rounded-lg p-6 w-[90%] xl:w-96 max-w-lg">
+              <h2 class="text-xl font-bold mb-4">Add Your Message</h2>
+              <form id="messageForm" class="space-y-3">
+                <input type="text" id="fullname" placeholder="Full Name" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
+                <p class="text-sm text-slate-500 italic mt-1">example: Sara Adelia.</p>
+                <input type="email" id="email" placeholder="Email" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
+                <p class="text-sm text-slate-500 italic mt-1">example: 123@gmail.com.</p>
+                <input type="text" id="position" placeholder="Position" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
+                <p class="text-sm text-slate-500 italic mt-1">example: Frontend, Backend, UI/UX, etc.</p>
+                <textarea
+                  id="message"
+                  placeholder="Your Message"
+                  class="w-full h-[100px] border text-left align-top resize-none rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend"
+                  required
+                ></textarea>
+                <div class="flex mt-4 gap-2 font-lexend">
+                  <button type="button" id="closeModal" class="bg-slate-500 text-white px-4 py-2 rounded hover:bg-slate-600 w-1/2 duration-300">Cancel</button>
+                  <button type="submit" class="btn border-2 border-slate-800 bg-[#EEEE] text-slate-800 px-4 py-2 rounded w-1/2 hover:bg-slate-600 hover:text-white duration-300">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Message container -->
+          <div id="messageContainer" class="w-full max-h-[500px] p-5 overflow-y-scroll space-y-6">
+            <!-- Pesan-pesan akan diisi di sini -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="pt-28">
+        <div class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
+          <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">Contact</h1>
+          <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">Let’s chat or work on something cool together!</p>
+        </div>
         <!-- Section 1 -->
-        <div class="space-y-3 lg:grid lg:grid-cols-2 lg:auto-rows-auto lg:gap-6 lg:space-y-0" data-aos="fade-down" data-aos-duration="2000">
-          <div class="flex flex-col items-start gap-2">
-            <div class="flex items-center gap-2">
-              <i class="ri-user-3-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-md p-5"></i>
-              <h3 class="font-bold font-lexend text-lg md:text-xl lg:text-2xl">Who Am I</h3>
-            </div>
-            <p class="font-junga text-sm md:text-lg lg:text-lg">
-              I'm a frontend developer who crafts responsive, interactive, and clean UIs. With a background in Informatics Engineering, I blend design sense with technical logic.
-            </p>
-          </div>
-          <div class="flex flex-col items-start gap-2">
-            <div class="flex items-center gap-2">
-              <i class="ri-brain-2-fill flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-md p-5"></i>
-              <h3 class="font-bold font-lexend text-lg md:text-xl lg:text-2xl">My Approach</h3>
-            </div>
-            <p class="font-junga text-sm md:text-lg lg:text-lg">
-              I focus on user-centered design, performance, and accessibility always evolving with modern tech to deliver seamless digital experiences.
-            </p>
-          </div>
-
-          <!-- Section 2 -->
-          <div class="lg:col-span-2">
-            <div class="flex items-center gap-2 mb-2">
-              <i class="ri-information-line items-center justify-center text-3xl"></i>
-              <h3 class="font-bold font-lexend text-lg md:text-xl lg:text-2xl">Personal Info</h3>
-            </div>
-
-            <!-- Info Personal -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 space-y-3 lg:space-y-0 lg:gap-6">
-              <div class="flex items-center gap-2">
-                <i class="ri-id-card-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
-
-                <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
-                  <span class="font-semibold tracking-wide">Nama:</span>
-                  <span>Muhammad Sajid Izzulhaq</span>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="ri-calendar-todo-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
-
-                <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
-                  <span class="font-semibold tracking-wide">Date of Birth:</span>
-                  <span>November, 12 - 2006</span>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="ri-building-4-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
-
-                <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
-                  <span class="font-semibold tracking-wide">Place of Birth:</span>
-                  <span>Lampung, Indonesia</span>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="ri-mail-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
-
-                <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
-                  <span class="font-semibold tracking-wide">Email:</span>
-                  <span>sajidizzulhaqz@gmail.com</span>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="ri-phone-line flex items-center justify-center w-8 h-8 bg-slate-800 text-white rounded-md"></i>
-                <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
-                  <span class="font-semibold tracking-wide">Phone:</span>
-                  <span>0895-2573-7776</span>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <i class="ri-school-line w-8 h-8 flex items-center justify-center text-white bg-slate-800 rounded-md text-[18px] leading-none shrink-0"></i>
-
-                <div class="font-junga semi-bold text-sm md:text-lg lg:text-xs">
-                  <span class="font-semibold tracking-wide">Education:</span>
-                  <span>Universitas Teknokrat Indonesia</span>
-                </div>
+        <div class="container mt-10 space-y-3 flex flex-col lg:w-96 xl:flex-row xl:space-y-0 xl:justify-around xl:w-full" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">
+          <a href="https://github.com/Sanzzyy">
+            <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer aos-box-animate">
+              <i class="ri-github-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
+              <div>
+                <span class="font-bold font-lexend text-xl">Github</span>
+                <p class="font-semibold font-lexend text-slate-600 text-xs">Explore my code & projects</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="pt-28">
-      <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
-        <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">Projects</h1>
-        <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">Some projects I've made for fun, learning, and school tasks.</p>
-      </div>
-
-      <!-- My Projects -->
-      <div class="container grid grid-cols-1 pt-5 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:grid-rows-3">
-        <!-- Solo Leveling -->
-        <a href="https://sololevelings1.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
-          <div class="project-card w-full aspect-[16/9] bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="SOLO LEVELING">
-            <img src="./assests/img/projects/solo_leveling.webp" alt="solo-leveling" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-        </a>
-        <!-- Attack On Titan S4 -->
-        <a href="https://shingeki-no-kyoujin.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
-          <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="ATTACK ON TITAN S4">
-            <img src="./assests/img/projects/attack_on_titan.webp" alt="attack-on-titan" class="w-full h-full" loading="lazy" />
-          </div>
-        </a>
-        <!-- First Portfolio -->
-        <a href="https://first-portfolio-tailwindcss.netlify.app/" class="xl:col-span-2 xl:row-start-1 xl:row-span-2 xl:text-2xl" data-aos="flip-up" data-aos-duration="1000">
-          <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="FIRST PORTFOLIO">
-            <img src="./assests/img/projects/first_portfolio.webp" alt="first-portfolio" class="w-full h-full object-contain" loading="lazy" />
-          </div>
-        </a>
-        <!-- Web Musics -->
-        <a href="https://web-musics-tailwindcss.netlify.app/" class="xl:col-span-1 xl:row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-          <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="WEB MUSICS">
-            <img src="./assests/img/projects/web_musics.webp" alt="web-musics" class="w-full h-full" loading="lazy" />
-          </div>
-        </a>
-        <!-- E-Commerce Keyboard -->
-        <a href="https://e-commerce-keyboard.netlify.app/" class="xl:col-span-1 xl:row-start-3 xl:row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-          <div class="project-card w-full aspect-video bg-white shadow-xl rounded-lg overflow-hidden relative" data-label="E-COMMERCE KEYBOARD">
-            <img src="./assests/img/projects/e_commerce_keyboard.webp" alt="" class="w-full h-full" loading="lazy" />
-          </div>
-        </a>
-        <!-- Coming Soon -->
-        <a href="" class="xl:col-span-1 row-span-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
-          <div class="project-card w-full aspect-video shadow-xl rounded-lg overflow-hidden relative" loading="lazy" data-label="COMING SOON!">
-            <div class="w-full h-full bg-slate-800/70"></div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Feedback -->
-    <section id="feedback" class="pt-28">
-      <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
-        <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">What People Say</h1>
-        <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">I’m thankful for all the feedback that helps me grow.</p>
-      </div>
-
-      <div class="container border-2 border-slate-800 w-full h-auto mt-10 rounded-lg" data-aos="fade-down" data-aos-duration="1000">
-        <!-- Section 1 -->
-        <div class="w-full flex justify-between p-5 text-xs sm:text-sm md:text-base border-b-2 border-b-slate-800 mb-5">
-          <div class="flex items-center justify-center gap-3">
-            <i class="ri-question-answer-fill text-xl"></i>
-            <h3 class="font-bold font-lexend">Message</h3>
-          </div>
-          <button id="openModal" class="flex bg-slate-800 rounded-lg p-2 items-center justify-center ml-6 text-white text-center gap-3 md:px-4 md:py-2 lg:px-6 lg:py-2">
-            <i class="ri-add-fill text-xl"></i>
-            <h3 class="font-bold font-lexend tracking-wide">Add Message</h3>
-          </button>
+          </a>
+          <a href="https://www.instagram.com/webdev_sajid/">
+            <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
+              <i class="ri-instagram-line w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
+              <div>
+                <span class="font-bold font-lexend text-xl">Instagram</span>
+                <p class="font-semibold font-lexend text-slate-600 text-xs">Life Updates</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.tiktok.com/@webdev.sajid06?is_from_webapp=1&sender_device=pc">
+            <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
+              <i class="ri-tiktok-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
+              <div>
+                <span class="font-bold font-lexend text-xl">Tiktok</span>
+                <p class="font-semibold font-lexend text-slate-600 text-xs">Content Education</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-sajid-4752742a0/">
+            <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
+              <i class="ri-linkedin-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
+              <div>
+                <span class="font-bold font-lexend text-xl">Linkedln</span>
+                <p class="font-semibold font-lexend text-slate-600 text-xs">Let's Connect Professionally</p>
+              </div>
+            </div>
+          </a>
         </div>
 
-        <!-- Modal diletakkan sebelum #messageContainer -->
-        <div id="messageModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
-          <div class="bg-[#eee] rounded-lg p-6 w-[90%] xl:w-96 max-w-lg">
-            <h2 class="text-xl font-bold mb-4">Add Your Message</h2>
-            <form id="messageForm" class="space-y-3">
-              <input type="text" id="fullname" placeholder="Full Name" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
-              <p class="text-sm text-slate-500 italic mt-1">example: Sara Adelia.</p>
-              <input type="email" id="email" placeholder="Email" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
-              <p class="text-sm text-slate-500 italic mt-1">example: 123@gmail.com.</p>
-              <input type="text" id="position" placeholder="Position" class="w-full border rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend" required />
-              <p class="text-sm text-slate-500 italic mt-1">example: Frontend, Backend, UI/UX, etc.</p>
-              <textarea
-                id="message"
-                placeholder="Your Message"
-                class="w-full h-[100px] border text-left align-top resize-none rounded-xl p-3 bg-slate-800 text-white outline-none font-lexend"
-                required
-              ></textarea>
-              <div class="flex mt-4 gap-2 font-lexend">
-                <button type="button" id="closeModal" class="bg-slate-500 text-white px-4 py-2 rounded hover:bg-slate-600 w-1/2 duration-300">Cancel</button>
-                <button type="submit" class="btn border-2 border-slate-800 bg-[#EEEE] text-slate-800 px-4 py-2 rounded w-1/2 hover:bg-slate-600 hover:text-white duration-300">Send</button>
+        <!-- Section 2 Contact -->
+        <div class="container rounded-lg mt-10 w-full border-4 border-slate-800 mx-auto h-fit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+          <div class="gap-3 items-center justify-center pt-5">
+            <i class="ri-message-2-fill"></i>
+            <span class="font-bold font-junga">Send Message</span>
+          </div>
+          <div class="flex pt-5">
+            <form id="form-maintance" class="space-y-3 w-full">
+              <input type="text" id="fullname" placeholder="Full Name" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" required />
+              <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" required />
+              <textarea id="message" placeholder="Your Message" class="w-full p-3 h-[200px] border rounded-xl outline-none text-left align-top resize-none bg-slate-800 text-white" required></textarea>
+              <div class="mt-4 w-full py-5">
+                <button type="submit" id="maintance" class="bg-slate-800 text-white py-2 rounded-xl hover:bg-slate-700 w-full h-10">Send</button>
               </div>
             </form>
           </div>
         </div>
-
-        <!-- Message container -->
-        <div id="messageContainer" class="w-full max-h-[500px] p-5 overflow-y-scroll space-y-6">
-          <!-- Pesan-pesan akan diisi di sini -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="pt-28">
-      <div class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
-        <h1 class="font-bold font-comfortaa text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:mb-2">Contact</h1>
-        <p class="font-lexend tracking-wide text-xs sm:text-sm md:text-base lg:text-lg">Let’s chat or work on something cool together!</p>
-      </div>
-      <!-- Section 1 -->
-      <div class="container mt-10 space-y-3 flex flex-col lg:w-96 xl:flex-row xl:space-y-0 xl:justify-around xl:w-full" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">
-        <a href="https://github.com/Sanzzyy">
-          <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer aos-box-animate">
-            <i class="ri-github-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
-            <div>
-              <span class="font-bold font-lexend text-xl">Github</span>
-              <p class="font-semibold font-lexend text-slate-600 text-xs">Explore my code & projects</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/webdev_sajid/">
-          <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
-            <i class="ri-instagram-line w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
-            <div>
-              <span class="font-bold font-lexend text-xl">Instagram</span>
-              <p class="font-semibold font-lexend text-slate-600 text-xs">Life Updates</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.tiktok.com/@webdev.sajid06?is_from_webapp=1&sender_device=pc">
-          <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
-            <i class="ri-tiktok-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
-            <div>
-              <span class="font-bold font-lexend text-xl">Tiktok</span>
-              <p class="font-semibold font-lexend text-slate-600 text-xs">Content Education</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/muhammad-sajid-4752742a0/">
-          <div class="flex border-4 border-slate-800 items-center gap-3 p-5 rounded-lg hover:bg-slate-800 hover:-translate-y-2 hover:text-white duration-300 hover:cursor-pointer">
-            <i class="ri-linkedin-fill w-12 h-12 bg-slate-800 text-[#EEEE] text-2xl flex justify-center items-center rounded-lg"></i>
-            <div>
-              <span class="font-bold font-lexend text-xl">Linkedln</span>
-              <p class="font-semibold font-lexend text-slate-600 text-xs">Let's Connect Professionally</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Section 2 Contact -->
-      <div class="container rounded-lg mt-10 w-full border-4 border-slate-800 mx-auto h-fit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
-        <div class="gap-3 items-center justify-center pt-5">
-          <i class="ri-message-2-fill"></i>
-          <span class="font-bold font-junga">Send Message</span>
-        </div>
-        <div class="flex pt-5">
-          <form id="form-maintance" class="space-y-3 w-full">
-            <input type="text" id="fullname" placeholder="Full Name" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" required />
-            <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded-xl outline-none bg-slate-800 text-white" required />
-            <textarea id="message" placeholder="Your Message" class="w-full p-3 h-[200px] border rounded-xl outline-none text-left align-top resize-none bg-slate-800 text-white" required></textarea>
-            <div class="mt-4 w-full py-5">
-              <button type="submit" id="maintance" class="bg-slate-800 text-white py-2 rounded-xl hover:bg-slate-700 w-full h-10">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="mt-28 w-full bg-slate-800">
